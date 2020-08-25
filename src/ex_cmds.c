@@ -5257,7 +5257,7 @@ ex_oldfiles(exarg_T *eap UNUSED)
 		{
 		    p = expand_env_save(p);
 		    eap->arg = p;
-		    eap->cmdidx = CMD_edit;
+		    // eap->cmdidx = CMD_edit;
 		    cmdmod.browse = FALSE;
 		    do_exedit(eap, NULL);
 		    vim_free(p);

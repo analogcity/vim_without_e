@@ -2093,7 +2093,7 @@ do_one_cmd(
 	// Do allow ":file" with no arguments (check for an argument later).
 	if (!(ea.argt & (EX_CMDWIN | EX_LOCK_OK))
 		&& ea.cmdidx != CMD_checktime
-		&& ea.cmdidx != CMD_edit
+		// && ea.cmdidx != CMD_edit
 		&& ea.cmdidx != CMD_file
 		&& !IS_USER_CMDIDX(ea.cmdidx)
 		&& curbuf_locked())
